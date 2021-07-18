@@ -12,7 +12,7 @@ body {
     font-size: 1rem;
     color: #242424;
     line-height: 1.5;
-    background-color: #fdfdfa;
+    background-color: #fff;
 }
 div {
     display: block;
@@ -43,20 +43,22 @@ label {
     color: #fff;
 }
 /* ---------nav---------- */
-nav .navbar {
-    display: fixed;
+nav {
+    position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 .upper-line {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #dfdfdf;
+    background-color: #ececec;
     align-items: center;
 }
 .group-two a {
     text-decoration: underline;
+    margin-left: -50px;
 }
 .group-one,
 .group-two,
@@ -69,14 +71,15 @@ nav .navbar {
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
-    letter-spacing: 0.98rem;
+    letter-spacing: .24rem;
     padding: 0.58rem 0;
-    margin-left: 4.98rem;
     cursor: pointer;
     font-weight: 700;
 }
 .main-nav {
+    padding: 0 1rem;
     padding-bottom: 3rem;
+    background-color: #fff;
 }
 /* ---------hero---------- */
 .hero {
@@ -88,7 +91,7 @@ nav .navbar {
 .hero .content-box {
     display: block;
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 .content-box h3 {
     letter-spacing: 0.58rem;
@@ -103,7 +106,7 @@ nav .navbar {
 }
 /* ---------section---------- */
 .section {
-    padding: 2rem;
+    padding: 3rem 2rem;
     text-align: center;
 }
 .title {
@@ -123,16 +126,19 @@ nav .navbar {
 .product img {
     width: 100%;
 }
+.product .content-box a {
+    text-decoration: underline;
+}
 /* ---------flexy---------- */
 .flexy {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .content {
     width: 40%;
     text-align: start;
-    margin-top: 100px;
+    margin-top: 211px;
 }
 .content h3 {
     letter-spacing: 0.58rem;
@@ -146,20 +152,20 @@ nav .navbar {
     width: 100%;
 }
 .photo img {
-    width: 80%;
+    width: 90%;
 }
 /* ---------social---------- */
 .social {
-    padding: 5rem;
+    padding: 3rem;
     margin: 0 -30px;
     text-align: start;
-    background-color: #dfdfdf;
+    background-color: #ececec;
     display: flex;
     justify-content: space-between;
 }
 .social .right-box {
     padding: 2rem;
-    width: 40%;
+    width: 100%;
     text-align: start;
 }
 .right-box h3 {
@@ -172,24 +178,52 @@ nav .navbar {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .inputs {
-    padding: 1rem;
+    padding: 0.45rem 0;
+    width: 60%;
+    display: inline-block;
+}
+.cheek {
+    display: inline-block;
+    width: 40%;
 }
 .form #text {
     border: 0;
+    padding: 1rem;
     background-color: transparent;
     font-style: italic;
     border-bottom: 1px solid #242424;
     width: 90%;
 }
+#text:focus,
+#text input:focus{
+    outline: none;
+}
 .arrow {
     border: 0;
     background-color: transparent;
     margin-left: -8px;
-    font-size: 18px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.left-box {
+    width: 70%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+    justify-content: space-evenly;
+}
+.left-box span {
+    font-size: 20px;
+    cursor: pointer;
+}
+.left-box span:hover {
+    color: #b3afaf;
 }
 /* ---------footer---------- */
 .upper-links {
@@ -207,6 +241,7 @@ nav .navbar {
 }
 .group h4 {
     text-transform: uppercase;
+    margin-left: 12px;
 }
 .group a {
     display: block;
