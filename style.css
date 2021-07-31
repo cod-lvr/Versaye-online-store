@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-*,
 /* ---------root---------- */
+*,
 ::after,
 ::before {
     box-sizing: border-box;
@@ -13,6 +13,7 @@ body {
     color: #242424;
     line-height: 1.5;
     background-color: #fff;
+    overflow-x: hidden;
 }
 div {
     display: block;
@@ -250,4 +251,68 @@ nav {
 }
 .down-logo {
     border-top: 1px solid #dfdfdf;
+}
+/* ---------Media-Query---------- */
+@media (max-width: 992px) {
+    .main-nav a,
+    .upper-line a{
+        display: none;
+    }
+    .main-nav {
+        padding: .25rem;
+    }
+    .hero {
+        height: 100vh;
+        margin-top: 35px;
+    }
+    .btn-group {
+        width: 100%;
+        margin: 0 150px;
+    }
+    .hero .btn {
+        width: 30%;
+        display: block;
+        margin-top: 2px;
+    }
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+    .flexy {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .flexy .content {
+        text-align: center;
+        width: 100%;
+        margin-top: -15px;
+    }
+    .section {
+        padding: 1rem;
+        margin: 0.27rem;
+    }
+    .flexy .photo {
+        display: none;
+    }
+    .social {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .social .left-box {
+        margin-top: 1rem;
+    }
+    .social .form {
+        display: flex;
+        flex-direction: column;
+    }
+    .form .cheek {
+        display: block;
+    }
+    .footer .upper-links {
+        display: flex;
+        flex-direction: column;
+    }
 }
